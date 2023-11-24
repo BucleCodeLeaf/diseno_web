@@ -9,15 +9,28 @@ body {
   color: rgb(230, 230, 230);
   background-color: rgb(28, 28, 28);
 }
-.nav {
+p {
+  font-size: 2rem;
+}
+h1 {
+  font-size: 6rem;
+}
+
+header {
   position: sticky;
   top: 0px;
+  width: inherit;
+  margin: 20px 0;
+  background: rgba(70, 70, 70, 0.2); /* Fondo semitransparente */
+  backdrop-filter: blur(5px); /* Aplica el filtro de desenfoque */
+}
+.nav {
   width: inherit;
   display: flex;
   flex-direction: row;
   align-items: center;
   justify-content: space-around;
-  border-bottom: rgb(162, 255, 0) solid 1px;
+  border-bottom: rgb(28, 28, 28, 0.1) solid 1px;
 }
 .nav ul {
   display: flex;
@@ -44,24 +57,40 @@ body {
   flex-direction: column;
   justify-content: center;
   align-items: center;
+
+  background-image: url("IMG/avenaXL.jpg");
+  background-size: cover;
+}
+.hero .cta_button {
+  text-decoration: none;
+  color: white;
+  font-size: 2rem;
 }
 
-.footer {
-  width: inherit;
-  height: 80px;
+footer {
   position: relative;
+  width: inherit;
+  /* height: 80px; */
   bottom: 0;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: space-around;
-  background-color: rgb(53, 53, 53);
+  background-color: rgb(28, 28, 28);
+  backdrop-filter: blur(1px);
 }
-
+footer {
+  padding: 40px 0;
+}
+footer p {
+  font-size: 1.2rem;
+}
 .footer ul {
   display: flex;
+  width: inherit;
   align-items: center;
   justify-content: space-around;
+  padding: 40px;
 }
 .footer ul li {
   list-style: none;
